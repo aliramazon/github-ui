@@ -25,8 +25,8 @@ export const SectionRightAndLeftPadding = css`
 export const SectionBase = styled.section`
     padding-right: var(--spacing-24);
     padding-left: var(--spacing-24);
-    padding-top: var(--spacing-8);
-    padding-bottom: var(--spacing-8);
+    padding-top: var(--spacing-4);
+    padding-bottom: var(--spacing-4);
 
     ${SectionRightAndLeftPadding}
 `;
