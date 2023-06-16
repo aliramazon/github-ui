@@ -18,8 +18,8 @@ const ReposListCard = styled(Card)`
 `;
 
 const RepoItem = styled(ListItem)`
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr max-content;
     align-items: center;
     height: 7rem;
     padding: var(--spacing-1);
