@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+body {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+@media screen and (max-width: 80em) {
+    html {
+        font-size: 56.25%; /* 9px */
+    }
+}
+
+html,
+body {
+    text-size-adjust: none;
+    font-family: "Maven Pro", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    /* COLORS */
+    --gray-25: #fcfcfd;
+    --gray-50: #f9fafb;
+    --gray-100: #f2f4f7;
+    --gray-200: #eaecf0;
+    --gray-300: #d0d5dd;
+    --gray-400: #98a2b3;
+    --gray-500: #667085;
+    --gray-600: #475467;
+    --gray-700: #344054;
+    --gray-800: #1d2939;
+    --gray-900: #101828;
+
+    --primary-25: #fcfaff;
+    --primary-50: #f9f5ff;
+    --primary-100: #f4ebff;
+    --primary-200: #e9d7fe;
+    --primary-300: #d6bbfb;
+    --primary-400: #b692f6;
+    --primary-500: #9e77ed;
+    --primary-600: #7f56d9;
+    --primary-700: #6941c6;
+    --primary-800: #53389e;
+    --primary-900: #42307d;
+
+    --red-25: #fffbfa;
+    --red-50: #fef3f2;
+    --red-100: #fee4e2;
+    --red-200: #fecdca;
+    --red-300: #fda29b;
+    --red-400: #f97066;
+    --red-500: #f04438;
+    --red-600: #d92d20;
+    --red-700: #b42318;
+    --red-800: #912018;
+    --red-900: #7a271a;
+
+    --yellow-25: #fffcf5;
+    --yellow-50: #fffaeb;
+    --yellow-100: #fef0c7;
+    --yellow-200: #fedf89;
+    --yellow-300: #fec84b;
+    --yellow-400: #fdb022;
+    --yellow-500: #f79009;
+    --yellow-600: #dc6803;
+    --yellow-700: #b54708;
+    --yellow-800: #93370d;
+    --yellow-900: #7a2e0e;
+
+    --green-25: #f6fef9;
+    --green-50: #ecfdf3;
+    --green-100: #d1fadf;
+    --green-200: #a6f4c5;
+    --green-300: #6ce9a6;
+    --green-400: #32d583;
+    --green-500: #12b76a;
+    --green-600: #039855;
+    --green-600: #039855;
+    --green-700: #027a48;
+    --green-800: #05603a;
+    --green-900: #054f31;
+
+    --white: #ffffff;
+
+    /* SPACING */
+    --spacing-1: 0.4rem;
+    --spacing-2: 0.8rem;
+    --spacing-3: 1.2rem;
+    --spacing-4: 1.6rem;
+    --spacing-5: 2rem;
+    --spacing-6: 2.4rem;
+    --spacing-8: 3.2rem;
+    --spacing-10: 4rem;
+    --spacing-12: 4.8rem;
+    --spacing-16: 6.4rem;
+    --spacing-20: 8rem;
+    --spacing-24: 9.6rem;
+    --spacing-32: 12.8rem;
+
+    /* Typography */
+    --font-size-1: 1.2rem;
+    --font-size-2: 1.4rem;
+    --font-size-3: 1.6rem;
+    --font-size-4: 1.8rem;
+    --font-size-5: 2rem;
+    --font-size-6: 2.4rem;
+    --font-size-7: 3rem;
+    --font-size-8: 3.6rem;
+    --font-size-9: 4.8rem;
+    --font-size-10: 6rem;
+    --font-size-11: 7.2rem;
+
+    --line-height-1: 1.6rem;
+    --line-height-2: 2rem;
+    --line-height-3: 2.4rem;
+    --line-height-4: 2.8rem;
+    --line-height-5: 3rem;
+    --line-height-6: 3.2rem;
+    --line-height-7: 3.8rem;
+    --line-height-8: 4.4rem;
+    --line-height-9: 6rem;
+    --line-height-10: 7.2rem;
+    --line-height-11: 9rem;
+
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+
+    --border-radius-4: 0.4rem;
+    --border-radius-6: 0.6rem;
+    --border-radius-8: 0.8rem;
+    --border-radius-10: 1rem;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--colorWhite);
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: var(--colorWhite);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gray-200);
+}
