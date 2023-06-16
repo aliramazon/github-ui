@@ -22,7 +22,7 @@ const Text = styled.span`
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 150px; /* or any width you want */
+        max-width: 15rem;
     }
 `;
 

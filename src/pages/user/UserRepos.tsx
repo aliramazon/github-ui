@@ -23,10 +23,16 @@ const RepoItem = styled(ListItem)`
     align-items: center;
     height: 7rem;
     padding: var(--spacing-1);
+    gap: var(--spacing-2);
+
+    @media screen and (max-width: 30em) {
+        height: 8rem;
+    }
 `;
 
 const RepoLanguages = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-1);
 `;
 
@@ -36,6 +42,18 @@ const idxToColor: { [key: string]: BadgeVariantProps } = {
     "2": "yellow",
     "3": "red"
 };
+
+const RepoName = styled(Typography)`
+    @media screen and (max-width: 30em) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 20rem;
+    }
+    @media screen and (max-width: 25em) {
+        max-width: 15rem;
+    }
+`;
 
 export const UserRepos: React.FC<{ data: UserReposType }> = ({ data }) => {
     return (
@@ -52,13 +70,13 @@ export const UserRepos: React.FC<{ data: UserReposType }> = ({ data }) => {
                             <Link to={node.url} target="blank" key={idx}>
                                 <RepoItem>
                                     <div>
-                                        <Typography
+                                        <RepoName
                                             variant="textL"
                                             align="left"
                                             weight="semibold"
                                         >
                                             {node.name}
-                                        </Typography>
+                                        </RepoName>
                                         <RepoLanguages>
                                             {node.languages?.nodes &&
                                                 node.languages.nodes.map(
