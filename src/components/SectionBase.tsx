@@ -17,8 +17,8 @@ export const SectionRightAndLeftPadding = css`
     }
 
     @media screen and (max-width: 30em) {
-        padding-right: var(--spacing-2);
-        padding-left: var(--spacing-2);
+        padding-right: var(--spacing-4);
+        padding-left: var(--spacing-4);
     }
 `;
 

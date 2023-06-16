@@ -23,7 +23,7 @@ const RepoItem = styled(ListItem)`
     align-items: center;
     height: 7rem;
     padding: var(--spacing-1);
-    gap: var(--spacing-2);
+    gap: var(--spacing-4);
 
     @media screen and (max-width: 30em) {
         height: 8rem;
