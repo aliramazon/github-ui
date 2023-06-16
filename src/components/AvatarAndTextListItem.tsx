@@ -16,6 +16,16 @@ const Avatar = styled.img`
     box-shadow: 0px 0px 0px 2px var(--primary-100);
 `;
 
+const Text = styled.span`
+    display: block;
+    @media screen and (max-width: 30em) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px; /* or any width you want */
+    }
+`;
+
 export const AvatarAndListItem: React.FC<{ imgUrl: string; text: string }> = ({
     imgUrl,
     text
@@ -24,7 +34,7 @@ export const AvatarAndListItem: React.FC<{ imgUrl: string; text: string }> = ({
         <AvatarAndListItemBase>
             <Avatar src={imgUrl} alt="Org" />
             <Button variant="contained" color="primaryLight">
-                {text}
+                <Text>{text}</Text>
             </Button>
         </AvatarAndListItemBase>
     );
