@@ -30,10 +30,6 @@ const RepoLanguages = styled.div`
     gap: var(--spacing-1);
 `;
 
-const RepoChip = styled(Button)`
-    height: 2.2rem;
-`;
-
 const idxToColor: { [key: string]: BadgeVariantProps } = {
     "0": "blue",
     "1": "green",
