@@ -34,7 +34,7 @@ export class GitHubAPI {
                                 stargazers(first: 0){
                                     totalCount
                                 }
-                                languages(first: 5) {
+                                languages(first: 4) {
                                     nodes {
                                         name
                                     }
