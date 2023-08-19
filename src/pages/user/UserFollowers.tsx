@@ -6,7 +6,7 @@ import {
     ListHead,
     Card,
     ListBody,
-    Typography
+    Typography,
 } from "../../design-system";
 import { AvatarAndListItem } from "../../components/";
 
@@ -15,7 +15,7 @@ const UserFollowersCard = styled(Card)`
 `;
 
 export const UserFollowers: React.FC<{ data: UserFollowersType }> = ({
-    data
+    data,
 }) => {
     return (
         <UserFollowersCard>
@@ -28,7 +28,12 @@ export const UserFollowers: React.FC<{ data: UserFollowersType }> = ({
                 <ListBody>
                     {data.nodes.map((node, idx) => {
                         return (
-                            <Link to={node.url} target="blank" key={idx}>
+                            <Link
+                                to={`../${node.login}`}
+                                target="blank"
+                                key={idx}
+                                relative="path"
+                            >
                                 <AvatarAndListItem
                                     imgUrl={node.avatarUrl}
                                     text={node.login}
